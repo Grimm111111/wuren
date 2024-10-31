@@ -1,10 +1,11 @@
 创建data件夹 放入数据 格式如下
 -data 
-------xsubu2
--------------test_data.npy  
--------------test_label.npy 
--------------train_data.npy 
--------------train_label.npy 
+-----uav
+-------------xsubu2
+--------------------test_data.npy  
+--------------------test_label.npy 
+--------------------train_data.npy 
+--------------------train_label.npy 
 命令行输入
 训练：
 python main.py --config config/uav-cross-subjectv2/train.yaml --work-dir work_dir/2104 --model_saved_name runs/2104 --device 0 --batch-size 16 --test-batch-size 16 --warm_up_epoch 5 --only_train_epoch 100 --seed 777
